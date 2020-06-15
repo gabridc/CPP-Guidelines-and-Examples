@@ -20,7 +20,8 @@ void Mergesort<VectorInt>::merge(int lowIndex, int midIndex, int highIndex)
 {
     const int max_size_lowvector = midIndex - lowIndex + 1;
     const int max_size_highvector = highIndex - midIndex;
-    std::vector<int> lowVector, highVector;
+    std::vector<int> lowVector;
+    std::vector<int> highVector;
 
     std::cout << "Merge" << std::endl;
     std::cout << "LowIndex: " << lowIndex << " MidIndex: " << midIndex << " HighIndex: " << highIndex << std::endl;
@@ -92,7 +93,8 @@ void Mergesort<TuplesArray>::merge(int lowIndex, int midIndex, int highIndex)
 {
     const int max_size_lowvector = midIndex - lowIndex + 1;
     const int max_size_highvector = highIndex - midIndex;
-    TuplesArray lowVector, highVector;
+    TuplesArray lowVector;
+    TuplesArray highVector;
 
     std::cout << "Merge" << std::endl;
     std::cout << "LowIndex: " << lowIndex << " MidIndex: " << midIndex << " HighIndex: " << highIndex << std::endl;

@@ -4,8 +4,8 @@
 #include <string>
 #include <tuple>
 
-typedef std::vector<std::tuple<int, std::string>> TuplesArray;
-typedef std::vector<int> VectorInt;
+using TuplesArray = std::vector<std::tuple<int, std::string>>;
+using VectorInt = std::vector<int>;
 /*
 *
 * Merge sort es un ordenamiento estable, paraleliza mejor, y es más eficiente manejando medios secuenciales de acceso lento. 
@@ -20,7 +20,7 @@ class Mergesort
 
 public:
     Mergesort();
-    Mergesort(T elements) : elements_(elements){};
+    explicit Mergesort(T elements) : elements_(elements){};
     T sort(int lowIndex, int highIndex);
 
 private:
@@ -34,7 +34,7 @@ class Mergesort<TuplesArray>
 
 public:
     Mergesort();
-    Mergesort(TuplesArray elements) : elements_(elements)
+    explicit Mergesort(TuplesArray elements) : elements_(elements)
     {
         for (int i = 0; i < (elements_.size() / 2); i++)
         {
@@ -54,7 +54,7 @@ class Mergesort<VectorInt>
 
 public:
     Mergesort();
-    Mergesort(VectorInt elements) : elements_(elements){};
+    explicit Mergesort(VectorInt elements) : elements_(elements){};
     VectorInt sort(int lowIndex, int highIndex);
 
 private:

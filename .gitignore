@@ -1,0 +1,4 @@
+*.exe
+Algorithms/Mergesort/.scannerwork/
+bw-output/
+*.gch
