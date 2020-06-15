@@ -10,10 +10,5 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: BatchScript@1
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: Sonar\ExecSonar.bat
+  displayName: Build'
