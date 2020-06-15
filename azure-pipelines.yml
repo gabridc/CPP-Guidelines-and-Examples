@@ -13,10 +13,5 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
 - script: Sonar\ExecSonar.bat
-  displayName: Build'
+  displayName: 'Build'
