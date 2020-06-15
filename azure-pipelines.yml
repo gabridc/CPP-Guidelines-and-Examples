@@ -19,4 +19,4 @@ steps:
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
 - script: Sonar\ExecSonar.bat
-  displayName: Build'
+  displayName: 'Build'
