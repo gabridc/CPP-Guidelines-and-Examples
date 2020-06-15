@@ -18,8 +18,5 @@ steps:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
-- script: JavaToolInstaller@0
-  displayName: 'Install Java'
-
 - script: Sonar\ExecSonar.bat
   displayName: Build'
