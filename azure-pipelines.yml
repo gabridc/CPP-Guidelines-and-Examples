@@ -18,14 +18,8 @@ steps:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
-- task: Bash@3
+
+- task: CmdLine@2
   inputs:
-    targetType: 'inline'
     script: |
-      dir .
-- task: Bash@3
-  inputs:
-    workingDirectory: 'D:/a/1/s/'
-    targetType: 'inline'
-    script: |
-      .\ExecSonar.bat
+     dir . && .\ExecSonar.bat
