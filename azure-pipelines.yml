@@ -30,4 +30,4 @@ steps:
       dir .
 - task: Bash@3
   inputs:
-    filePath: 'Sonar\ExecSonar.bat'
+    filePath: 'ExecSonar.bat'
