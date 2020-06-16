@@ -25,11 +25,7 @@ steps:
       dir .
 - task: Bash@3
   inputs:
-    targetType: 'inline'
-    script: |
-      dir .
-- task: Bash@3
-  inputs:
+    workingDirectory: 'D:/a/1/s/'
     targetType: 'inline'
     script: |
       .\ExecSonar.bat
