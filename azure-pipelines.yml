@@ -18,5 +18,7 @@ steps:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
+- bash: dir .
+  displayName: 'Directory'
 - script: Sonar\ExecSonar.bat
   displayName: 'Build'
