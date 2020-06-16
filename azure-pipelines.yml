@@ -23,3 +23,11 @@ steps:
     targetType: 'inline'
     script: |
       dir .
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      dir .
+- task: Bash@3
+  inputs:
+    filePath: 'Sonar\ExecSonar.bat'
