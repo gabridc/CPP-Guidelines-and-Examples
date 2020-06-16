@@ -30,4 +30,6 @@ steps:
       dir .
 - task: Bash@3
   inputs:
-    filePath: 'ExecSonar.bat'
+    targetType: 'inline'
+    script: |
+      .\ExecSonar.bat
