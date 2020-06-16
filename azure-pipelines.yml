@@ -7,7 +7,7 @@
 
 
 trigger:
-- master
+- SonarConfig
 
 pool:
   vmImage: 'windows-latest'
