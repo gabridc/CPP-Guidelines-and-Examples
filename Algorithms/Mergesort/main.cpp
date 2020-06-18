@@ -19,6 +19,7 @@ More info about the exercise: https://www.hackerrank.com/challenges/countingsort
 */
 
 #include <iostream>
+#include <algorithm>
 #include "mergesort.hpp"
 
 int main(void)
@@ -38,5 +39,14 @@ int main(void)
     {
         std::cout << std::get<1>(el) << ", ";
     }
+
+
+    std::sort(array.begin(), array.end());
+
+        for (auto el : array)
+    {
+        std::cout << (el) << ", ";
+    }
+
     return 0;
 }
