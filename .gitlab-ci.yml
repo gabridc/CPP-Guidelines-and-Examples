@@ -17,7 +17,7 @@ build:
     - chmod +x build-wrapper-linux-x86-64
     - cd ../sonar-scanner-4.3.0.2102-linux/bin/
     - chmod +x sonar-scanner
-    - export JAVA_HOME=/usr/lib/jvm/default-jre
+    - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
     - cd ../../../Algorithms/Mergesort/    
     - chmod +x ExecSonarLinux.sh && ./ExecSonarLinux.sh
   artifacts:
