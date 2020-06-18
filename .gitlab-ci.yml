@@ -12,7 +12,7 @@ build:
   #   - apt update && apt -y install make autoconf
   script:
     - dir .
-    - g++ main.cpp mergesort.cpp mergesort.hpp -0 main
+    - g++ Algorithms\main.cpp Algorithms\mergesort.cpp Algorithms\mergesort.hpp -0 main
   artifacts:
     paths:
       - main
