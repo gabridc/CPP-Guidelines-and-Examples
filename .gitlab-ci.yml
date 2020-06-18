@@ -13,8 +13,8 @@ build:
     - java --version
   script:
     - cd ./Algorithms/Mergesort/
-    - chmod +x ExecSonarLinux.sh && ./ExecSonarLinux.sh
     - chmod +x ./Sonar/build-wrapper-linux-x86/build-wrapper-linux-x86-64 && chmod +x ./Sonar/sonar-scanner-4.3.0.2102-linux/bin/sonar-scanner
+    - chmod +x ExecSonarLinux.sh && ./ExecSonarLinux.sh
   artifacts:
     paths:
       - main
