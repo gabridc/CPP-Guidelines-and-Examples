@@ -11,8 +11,8 @@ build:
   before_script:
     - apt update && apt -y install make autoconf openjdk-8-jdk
   script:
-    - dir .
-    - g++ ./Algorithms/Mergesort/main.cpp ./Algorithms/Mergesort/mergesort.cpp ./Algorithms/Mergesort/mergesort.hpp -o ./Algorithms/Mergesort/main
+    - cd ./Algorithms/Mergesort/
+    - ExecSonarLinux.sh
   artifacts:
     paths:
       - main
