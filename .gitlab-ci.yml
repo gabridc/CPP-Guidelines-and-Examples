@@ -11,13 +11,13 @@ build:
   before_script:
     - apt upgrade && apt update && apt -y install make autoconf default-jre
     - java --version
-    - ls -la /usr/lib/jvm/
+    - ls -la /usr/lib/jvm/java-11-openjdk-amd64/
   script:
     - cd ./Sonar/build-wrapper-linux-x86/
     - chmod +x build-wrapper-linux-x86-64
     - cd ../sonar-scanner-4.3.0.2102-linux/bin/
     - chmod +x sonar-scanner
-    - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+    - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/
     - cd ../../../Algorithms/Mergesort/    
     - chmod +x ExecSonarLinux.sh && ./ExecSonarLinux.sh
   artifacts:
