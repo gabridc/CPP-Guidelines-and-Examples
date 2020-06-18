@@ -12,11 +12,11 @@ build:
     - apt upgrade && apt update && apt -y install make autoconf default-jre
     - java --version
   script:
-    - cd /Sonar/build-wrapper-linux-x86/
+    - cd ./Sonar/build-wrapper-linux-x86/
     - chmod +x build-wrapper-linux-x86-64
-    - cd ../sonar-scanner-4.3.0.2102-linux/bin/
+    - cd ./sonar-scanner-4.3.0.2102-linux/bin/
     - chmod +x sonar-scanner
-    - cd ./Algorithms/Mergesort/    
+    - cd ../../Algorithms/Mergesort/    
     - chmod +x ExecSonarLinux.sh && ./ExecSonarLinux.sh
   artifacts:
     paths:
