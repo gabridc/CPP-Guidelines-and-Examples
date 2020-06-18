@@ -9,8 +9,8 @@ build:
   # instead of calling g++ directly you can also use some build toolkit like make
   # install the necessary build tools when needed
   before_script:
-    - add-apt-repository ppa:openjdk-r/ppa
-    - apt update && apt -y install make autoconf openjdk-8-jdk
+    - apt update && apt -y install make autoconf openjdk-14-jdk
+    - java --version
   script:
     - cd ./Algorithms/Mergesort/
     - ExecSonarLinux.sh
