@@ -37,7 +37,7 @@ if [ ! -f "$jar_file" ] ; then
   exit 1
 fi
 
-use_embedded_jre=true
+use_embedded_jre=false
 if [ "$use_embedded_jre" = true ]; then
   export JAVA_HOME=$sonar_scanner_home/jre
 fi
